@@ -1682,15 +1682,9 @@ button, .button {
 	padding: 6px 20px;
 	border: 2px solid #000;
 	background: #fff;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-		-ms-user-select: none;
-			user-select: none;
-	white-space: nowrap;
-	-webkit-transition: all .05s linear;
-	transition: all .05s linear;
+	white-space: nowrap;	
 	font-family: inherit;
-	text-decoration: none;
+	
    }
    
    button:before, button:after, 
@@ -1698,7 +1692,6 @@ button, .button {
 	content: "";
 	position: absolute;
 	background: #fff;
-	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
    }
    
@@ -1723,12 +1716,7 @@ button, .button {
 	cursor: pointer;
    }
    
-   button:active,
-   .button:active {
-	-webkit-transform: scale(0.95);
-		-ms-transform: scale(0.95);
-			transform: scale(0.95);
-   }
+
    
    button:hover:before,
    .button:hover:before {
