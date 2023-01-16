@@ -7,6 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
+
 .card_body_text{
 	font-size: 0.8em;
 	margin-bottom: 0;
@@ -1669,91 +1677,85 @@ input, select, textarea {
 			}
 
 /* Button */
+a.button{
+	outline: none;
+	text-decoration: none;
+}
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		-moz-transition: background-color .2s ease-in-out;
-		-webkit-transition: background-color .2s ease-in-out;
-		-ms-transition: background-color .2s ease-in-out;
-		transition: background-color .2s ease-in-out;
-		-webkit-appearance: none;
-		position: relative;
-		display: inline-block;
-		color: #fff !important;
-		text-decoration: none;
-		font-weight: 700;
-		border: 0;
-		outline: 0;
-		cursor: pointer;
-		border-radius: 8px;
-		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-		overflow: hidden;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
-		padding: 1em 2.35em 1em 2.35em;
-		font-size: 1.1em;
-		max-width: 24em;
-	}
+button, .button {
+	position: relative;
+	height: 40px;
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #43bff0;
-			color: #fff !important;
-		}
-
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		button:active,
-		.button:active {
-			background-color: #3BA8D3;
-			top: 1px;
-		}
-
-		input[type="button"].large,
-		input[type="submit"].large,
-		input[type="reset"].large,
-		button.large,
-		.button.large {
-			font-size: 1.5em;
-			letter-spacing: -0.025em;
-		}
-
-		input[type="button"].alt,
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		button.alt,
-		.button.alt {
-			background-color: #444;
-			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
-		}
-
-			input[type="button"].alt:hover,
-			input[type="submit"].alt:hover,
-			input[type="reset"].alt:hover,
-			button.alt:hover,
-			.button.alt:hover {
-				background-color: #4f4f4f;
-				color: #fff !important;
-			}
-
-			input[type="button"].alt:active,
-			input[type="submit"].alt:active,
-			input[type="reset"].alt:active,
-			button.alt:active,
-			.button.alt:active {
-				background-color: #3f3f3f;
-			}
+	padding: 6px 20px;
+	border: 2px solid #000;
+	background: #fff;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	white-space: nowrap;
+	-webkit-transition: all .05s linear;
+	transition: all .05s linear;
+	font-family: inherit;
+	text-decoration: none;
+   }
+   
+   button:before, button:after, 
+   .button:before, .button:after {
+	content: "";
+	position: absolute;
+	background: #fff;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+   }
+   
+   button:before,
+   .button:before {
+	width: calc(100% + 6px);
+	height: calc(100% - 16px);
+	top: 8px;
+	left: -3px;
+   }
+   
+   button:after,
+   .button:after{
+	width: calc(100% - 16px);
+	height: calc(100% + 6px);
+	top: -3px;
+	left: 8px;
+   }
+   
+   button:hover,
+   .button:hover {
+	cursor: pointer;
+   }
+   
+   button:active,
+   .button:active {
+	-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+			transform: scale(0.95);
+   }
+   
+   button:hover:before,
+   .button:hover:before {
+	height: calc(100% - 32px);
+	top: 16px;
+   }
+   
+   button:hover:after,
+   .button:hover:after {
+	width: calc(100% - 32px);
+	left: 16px;
+   }
+   
+   button span,
+   .button span {
+	font-size: 15px;
+	z-index: 3;
+	position: relative;
+	font-weight: 600;
+   }
 
 /* List */
 
@@ -2023,14 +2025,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #fff;
 			text-shadow: 1px 1px 0px #fff;
 			padding: 2em 0 0em 0;
 			min-height: 100vh;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: #fff;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
@@ -2039,26 +2041,12 @@ input, select, textarea {
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 			min-height: 100vh;
+			position: relative;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
 				color: #fff;
 			}
-
-			.wrapper.style4 form input[type=text],
-			.wrapper.style4 form input[type=password],
-			.wrapper.style4 form select,
-			.wrapper.style4 form textarea {
-				border: none;
-				background: #282828;
-			}
-
-				.wrapper.style4 form input[type=text]:focus,
-				.wrapper.style4 form input[type=password]:focus,
-				.wrapper.style4 form select:focus,
-				.wrapper.style4 form textarea:focus {
-					background: #252525;
-				}
 
 /* Nav */
 
@@ -2160,9 +2148,7 @@ input, select, textarea {
 				color: inherit;
 			}
 
-	#contact footer {
-		font-size: 0.9em;
-	}
+	#contact footer {font-size: 0.9em;}
 
 /* Copyright */
 
@@ -2314,38 +2300,7 @@ input, select, textarea {
 			section, article {
 				clear: both;
 			}
-
-		/* Button */
-
-			input[type="button"],
-			input[type="submit"],
-			input[type="reset"],
-			button,
-			.button {
-				text-align: center;
-				font-size: 1.2em;
-				width: 100%;
-				padding: 1em 0 1em 0;
-			}
-
-				input[type="button"].large,
-				input[type="submit"].large,
-				input[type="reset"].large,
-				button.large,
-				.button.large {
-					font-size: 1.2em;
-					letter-spacing: 0;
-				}
-
-				input[type="button"].medium,
-				input[type="submit"].medium,
-				input[type="reset"].medium,
-				button.medium,
-				.button.medium {
-					font-size: 1em;
-					letter-spacing: 0;
-					
-				}
+		 
 
 		/* Social */
 
@@ -2456,9 +2411,19 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+			#contact {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
 			#contact footer {
 				margin: 0;
+				margin-top: auto;
+				
 			}
+
+
 
 		/* Copyright */
 
