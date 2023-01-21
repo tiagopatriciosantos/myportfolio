@@ -6,7 +6,78 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+ 
+  .home-hero__socials {
+	position: absolute;
+	top: 50%;
+	border: 2px solid #eee;
+	border-left: 2px solid #eee;
+	transform: translateY(-50%);
+	background-color: #000;
 
+  }
+  @media only screen and (max-width: 56.25em) {
+	.home-hero__socials {
+	  display: none;
+	}
+  }
+  .home-hero__mouse-scroll-cont {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  @media only screen and (max-width: 37.5em) {
+	.home-hero__mouse-scroll-cont {
+	  display: none;
+	}
+  }
+  .home-hero__social {
+	width: 3rem;
+	
+  }
+  .home-hero__social-icon-link {
+	width: 100%;
+	display: block;
+	padding: 0.2rem;
+	border-bottom: 2px solid #eee;
+	transition: background 0.3s;
+  }
+  .home-hero__social-icon-link:hover {
+	background: rgba(255, 255, 255, 0.1);
+  }
+  .home-hero__social-icon-link--bd-none {
+	border-bottom: 0;
+  }
+  .home-hero__social-icon {
+	width: 100%;
+  }
+  .home-hero__content {
+	position: absolute;
+	top: 600px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 90rem;
+	width: 88%;
+  }
+  @media only screen and (max-width: 37.5em) {
+	.home-hero__content {
+	  padding: 19rem 0 13rem 0;
+	  margin: auto;
+	  position: static;
+	  transform: translate(0, 0);
+	}
+  }
+  .home-hero__info {
+	margin: 3rem auto 0 auto;
+	max-width: 80rem;
+  }
+  .home-hero__cta {
+	margin-top: 5rem;
+	text-align: center;
+  }
+
+  
 
 .card_body_text{
 	font-size: 1em;
