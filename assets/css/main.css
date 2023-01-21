@@ -9,7 +9,7 @@
 
 
 .card_body_text{
-	font-size: 0.8em;
+	font-size: 1em;
 	margin-bottom: 0;
 }
 
@@ -1907,7 +1907,7 @@ button, .button {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
-		padding: 2em;
+		padding: 1em;
 	}
 
 		.box.style1 {
@@ -1931,9 +1931,9 @@ button, .button {
 		.box.style2 .image {
 			
 			position: relative;
-			left: 2em;
-			top: 2em;
-			margin: -4em 0 4em -4em;
+			left: 0em;
+			top: 0em;
+			margin: 0em 0 0em 0em;
 			width: auto;
 		}
 
@@ -1984,7 +1984,7 @@ button, .button {
 				font-size: 6em;
 			}
 
-#contact .iconimg {
+.iconimg {
 	margin-right: 1rem;
 	width: 2.5rem;
 	}
@@ -2014,7 +2014,7 @@ button, .button {
 
 		.wrapper.style3 {
 			background-color: #fff;
-			text-shadow: 1px 1px 0px #fff;
+			/* text-shadow: 1px 1px 0px #fff; */
 		}
 
 		.wrapper.style4 {
