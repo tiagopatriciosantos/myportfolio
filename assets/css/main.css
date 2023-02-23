@@ -196,7 +196,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.25em;
 		letter-spacing: -0.015em;
 	}
 
@@ -2016,6 +2016,7 @@ button, .button {
 			text-shadow: 1px 1px 0px #fff;
 			padding: 2em 0 0em 0;
 			min-height: 100vh;
+			font-family: helvetica;
 		}
 
 		.wrapper.style3 {
@@ -2135,6 +2136,13 @@ button, .button {
 			#top p a {
 				color: inherit;
 			}
+	
+	#work p {
+		font-size: 16px;
+		font-family: helvetica;
+		margin:0;
+    	padding:0;
+	}
 
 	#contact footer {font-size: 0.9em;}
 
